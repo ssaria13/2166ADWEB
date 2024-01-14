@@ -1,0 +1,179 @@
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: black;">
+  <div class="container px-4 px-lg-5">
+    <a class="navbar-brand" href="#!" style="font-weight: bold; color: pink;">ALC BAGS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!" style=" color: pink;">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#!" style=" color: pink;">About</a></li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#!" style=" color: pink;">All Products</a></li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li><a class="dropdown-item" href="#!" style=" color: pink;">Signature Bags</a></li>
+                      <li><a class="dropdown-item" href="#!" style=" color: pink;">New Arrivals</a></li>
+                  </ul>
+              </li>
+          </ul>
+          <form class="d-flex">
+            <button class="btn btn-outline-dark" type="submit" style="background-color: #ffc0cb; border-color: #ffc0cb; color: black;">
+                <i class="bi-cart-fill me-1"></i>
+                ❤︎ Cart
+                <span class="badge bg-dark text-white ms-1 rounded-pill"> {{clickCount}} </span>
+              </button>
+              
+          </form>
+      </div>
+  </div>
+</nav>
+<!-- Product section-->
+<section class="py-5">
+  <div class="container px-4 px-lg-5 my-5">
+      <div class="row gx-4 gx-lg-5 align-items-center">
+          <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="assets/images/charles.png" alt="..." /></div>
+          <div class="col-md-6">
+              <div class="small mb-1">limited Edition</div>
+              <h1 class="display-5 fw-bolder">Charles and Keith Fur Handle Pink Bag</h1>
+              <div class="fs-5 mb-5">
+                  <span>₱7,000.00</span>
+              </div>
+              <p class="lead">C&K mall pull-out
+                Super cute in actual.
+                Limited edition
+                Guaranteed high-quality.
+                White fur handle and pink body.
+                Comes with pink box.
+                Also available in black
+                Ideal as gift</p>
+              <div class="d-flex">
+                <div class="text-center"><a class="btn btn-light" style="background-color: pink; color: black;"><button (click)="clickMe()">Add to heart</button></a></div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- Related items section-->
+<section class="py-5 bg-light">
+  <div class="container px-4 px-lg-5 mt-5">
+    
+      <h2 class="fw-bolder mb-4">Related products</h2>
+      <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+          <div class="col mb-5">
+              <div class="card h-100">
+                  <!-- Product image-->
+                  <div class="badge" style="background-color: pink; color: black; position: absolute; top: 0.5rem; right: 0.5rem;">Low Stock</div>
+
+                  <img class="card-img-top" src="assets/images/4.png" alt="..." />
+                  <!-- Product details-->
+                  <div class="card-body p-4">
+                      <div class="text-center">
+                          <!-- Product name-->
+                          <h5 class="fw-bolder"> Tory Burch</h5>
+                          <!-- Product price-->
+                          ₱9,000.00
+                      </div>
+                  </div>
+                  <!-- Product actions-->
+                  <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                   <div class="text-center"><a class="btn btn-light" style="background-color: pink; color: white;"><button (click)="clickMe()">Add to heart</button></a></div>
+                  </div>
+              </div>
+          </div>
+          <div class="col mb-5">
+              <div class="card h-100">
+                  <!-- Sale badge-->
+                  <div class="badge" style="background-color: pink; color: black; position: absolute; top: 0.5rem; right: 0.5rem;">Sale</div>
+
+                  <!-- Product image-->
+                  <img class="card-img-top" src="assets/images/3.png" alt="..." />
+                  <!-- Product details-->
+                  <div class="card-body p-4">
+                      <div class="text-center">
+                          <!-- Product name-->
+                          <h5 class="fw-bolder">Christian Dior</h5>
+                          <!-- Product reviews-->
+                          <div class="d-flex justify-content-center small text-warning mb-2">
+                              <div class="bi-star-fill"></div>
+                              <div class="bi-star-fill"></div>
+                              <div class="bi-star-fill"></div>
+                              <div class="bi-star-fill"></div>
+                              <div class="bi-star-fill"></div>
+                          </div>
+                          <!-- Product price-->
+                          <span>₱11,000.00</span>
+                          
+                      </div>
+                  </div>
+                  <!-- Product actions-->
+                  <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                   <div class="text-center"><a class="btn btn-light" style="background-color: pink; color: white;"><button (click)="clickMe()">Add to heart</button></a></div>
+                  </div>
+              </div>
+          </div>
+          <div class="col mb-5">
+              <div class="card h-100">
+                  <!-- Sale badge-->
+                  <div class="badge" style="background-color: pink; color: black; position: absolute; top: 0.5rem; right: 0.5rem;">Limited Edition</div>
+
+                  <!-- Product image-->
+                  <img class="card-img-top" src="assets/images/2.png" alt="..." />
+                  <!-- Product details-->
+                  <div class="card-body p-4">
+                      <div class="text-center">
+                          <!-- Product name-->
+                          <h5 class="fw-bolder">Jacquemus</h5>
+                          <!-- Product price-->
+                          <span>₱6,000.00</span>
+                          
+                      </div>
+                  </div>
+                  <!-- Product actions-->
+                  <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                   <div class="text-center"><a class="btn btn-light" style="background-color: pink; color: white;"><button (click)="clickMe()">Add to heart</button></a></div>
+                  </div>
+              </div>
+          </div>
+          <div class="col mb-5">
+              <div class="card h-100">
+                  <!-- Product image-->
+                  <div class="badge" style="background-color: pink; color: black; position: absolute; top: 0.5rem; right: 0.5rem;">New Release</div>
+
+                  <img class="card-img-top" src="assets/images/1.png" alt="..." />
+                  <!-- Product details-->
+                  <div class="card-body p-4">
+                      <div class="text-center">
+                          <!-- Product name-->
+                          <h5 class="fw-bolder">Louis Vuitton</h5>
+                          <!-- Product reviews-->
+                          <div class="d-flex justify-content-center small text-warning mb-2">
+                              <div class="bi-star-fill"></div>
+                              <div class="bi-star-fill"></div>
+                              <div class="bi-star-fill"></div>
+                              <div class="bi-star-fill"></div>
+                              <div class="bi-star-fill"></div>
+                          </div>
+                          <!-- Product price-->
+                          ₱21,000.00
+                      </div>
+                  </div>
+                  <!-- Product actions-->
+                  <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                   <div class="text-center"><a class="btn btn-light" style="background-color: pink; color: white;"><button (click)="clickMe()">Add to heart</button></a></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- Footer-->
+<!-- Footer -->
+<footer class="py-5" style="background-color: pink;">
+    <div class="container"><p class="m-0 text-center text-black">Copyright &copy; ALC BAGS 2024</p></div>
+  </footer>
+  
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
