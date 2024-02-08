@@ -1,0 +1,61 @@
+<section class="bg" style="background-color:pink">
+
+<h1>Text Format Pipes</h1>
+<div> 
+  Uppercase: {{title | uppercase}} <br/>
+  Lowercase: {{title | lowercase}} <br>  
+</div>
+<hr/>
+
+<h1>Date Pipes</h1>
+<div>
+  Today's date (Default): {{presentDate}} <br>
+  Short date: {{presentDate | date: 'shortDate' }} <br>
+  Medium Date: {{presentDate | date: 'mediumDate'}}<br>
+  Long Date: {{presentDate | date: 'longDate' }}
+</div>
+<hr/>
+
+<h1>Currency Pipe</h1>
+<div>
+  {{ price | currency:'PHP':true}} <br>
+  {{ price | currency: 'USD' }}<br>
+  {{ price | currency: 'EUR' }}
+</div>
+<hr/>
+
+<h1>Decimal Pipe</h1>
+<div> 
+  <p> Apply formatting: {{decimalNum1 | number:'3.1'}} </p> 
+  <p> Apply formatting: {{decimalNum1 | number:'2.1-4'}} </p> 
+  <p> Apply formatting: {{decimalNum1 | number:'2.1-7'}} </p> 
+</div> 
+<hr/>
+
+<h1>JSON Pipe</h1>
+<div>
+  1. ngNonBindable>{{ jsonData }} (1) <br>
+  2. {{ jsonData }} <br>
+  3. ngNonBindable>{{ jsonData | json }} <br>
+  4. {{ jsonData | json }}
+</div>
+<hr/>
+
+<h1>Percent Pipe</h1>
+<div>
+  <p>A: {{ a | percent }}</p>
+  <p>B: {{ b | percent: '4.2-5' }}</p>
+  <p>C: {{ c | percent: '4.3-9'}}</p>
+</div>
+<hr/>
+
+<h1>Slice Pipe</h1>
+<div>
+Start index: {{Enhypen | slice:2}} <br>
+Start and end index: {{Enhypen | slice:1:4}} <br>
+Negative index: {{Enhypen | slice:-2}} <br>
+Negative start and end index: {{Enhypen | slice:-4:-2}} 
+</div>
+
+</section> 
+ 
