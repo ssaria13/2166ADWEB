@@ -1,0 +1,21 @@
+.navbar-brand {
+    color: white;
+}
+
+.navbar-brand:hover {
+    color: lightgray; /* Optional: Change color on hover */
+}
+
+.navbar-nav {
+    margin-left: auto; /* Pushes navbar links to the right */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: lightgray; /* Optional: Change color on hover */
+}
+

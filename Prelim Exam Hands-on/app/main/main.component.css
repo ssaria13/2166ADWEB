@@ -1,0 +1,25 @@
+.lumiere-header {
+    background-image: url('https://images.unsplash.com/photo-1549439602-43ebca2327af?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .early-bird-button {
+      background-color: transparent;
+      border: 1px solid #ffffff; /* Add a border to make the button visible */
+      color: #ffffff; /* Set the text color */
+      padding: 10px 15px;
+      cursor: pointer;
+      outline: none; /* Remove the default focus outline */
+    }
+    
+    
+    .early-bird-button:hover {
+      background-color: #060606; /* Change background color on hover */
+      color: #fff; /* Change text color on hover */
+    }
+
+    h2 {
+        border: 1px solid black; /* Add black thin border */
+        text-align: center; /* Center align the text */
+      }
