@@ -1,0 +1,35 @@
+mat-grid-tile {
+  background: none; /* Remove background color */
+}
+
+img {
+  width: 900px;
+  height: 450px;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  color: #FF69B4; /* Set text color to black */
+}
+
+.pick {
+  padding-left: 100px;
+  background-color: #FF69B4; /* Remove background color */
+}
+
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+  border-color: #FF69B4; /* Change border color of selected radio button */
+}
+
+.example-radio-button {
+  color: black; /* Change font color of unselected choices to black */
+}
+
+.example-radio-button.mat-accent.mat-radio-checked {
+  color: black; /* Change font color of selected choice to black */
+}
+
+.selected-season {
+  color: black; /* Change font color of the selected season text to black */
+}

@@ -1,0 +1,22 @@
+<h1 style="color: #FF69B4;">Cutest Kpop Idol</h1>
+
+<div class="pick" style="background-color: #FF69B4;">
+    <label id="example-radio-group-label" style="color: white;">Choose the cutest kpop idol</label>
+    <mat-radio-group
+      aria-labelledby="example-radio-group-label"
+      class="example-radio-group"
+      [(ngModel)]="cutestidol"
+      (change)="showSnackbar()">
+      <mat-radio-button *ngFor="let idol of idols" class="example-radio-button" [value]="idol" style="color: white;">
+        {{idol}}
+      </mat-radio-button>
+    </mat-radio-group>
+    <div style="color: white;">Your favorite idol is: <span class="selected-idol">{{ cutestidol }}</span></div>
+</div>
+
+<mat-grid-list cols="2" rowHeight="2:1">
+    <mat-grid-tile><img src="https://pbs.twimg.com/media/F5fJPzlaQAAYbE3?format=jpg&name=4096x4096" alt="Image 1"></mat-grid-tile>
+    <mat-grid-tile><img src="https://www.allkpop.com/upload/2023/12/content/021304/1701540278-haerin2.jpg" alt="Image 2"></mat-grid-tile>
+    <mat-grid-tile><img src="https://images.gmanews.tv/webpics/2022/08/sunoo_2022_08_24_16_32_40.jpeg" alt="Image 3"></mat-grid-tile>
+    <mat-grid-tile><img src="https://www.allkpop.com/upload/2022/11/content/221607/web_data/allkpop_1669151954_untitled-1.jpg" alt="Image 4"></mat-grid-tile>
+</mat-grid-list>
