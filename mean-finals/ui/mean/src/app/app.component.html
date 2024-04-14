@@ -1,0 +1,42 @@
+<div class="container">
+  <h1> BOOKS APPLICATION by Aubrey Castr (WD-302)</h1>
+
+  <div class="input-container">
+    <input id="newTitle" [(ngModel)]="newBook.title" placeholder="Title">
+    <input id="newDesc" [(ngModel)]="newBook.description" placeholder="Description">
+    <input id="newPrice" type="number" [(ngModel)]="newBook.price" placeholder="Price">
+    <button (click)="addBook()">Add Book</button>
+  </div>
+
+  <table *ngIf="books.length > 0" class="book-table">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let book of books">
+        <td>{{ book.title }}</td>
+        <td>{{ book.description }}</td>
+        <td>{{ book.price }}</td>
+        <td>
+          <button (click)="editBook(book)">Edit</button>
+          <button (click)="deleteBook(book)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div *ngIf="books.length === 0" class="no-books">No books added yet.</div>
+
+  <div *ngIf="editingBook" class="edit-container">
+    <input [(ngModel)]="editingBook.title" placeholder="Title">
+    <input [(ngModel)]="editingBook.description" placeholder="Description">
+    <input type="number" [(ngModel)]="editingBook.price" placeholder="Price">
+    <button (click)="saveEdit()">Save</button>
+    <button (click)="cancelEdit()">Cancel</button>
+  </div>
+</div>
